@@ -34,6 +34,7 @@ Installation
   * In the right hand window double click CN=userDisplay
   * Choose adminPropertyPages and add the value (where _number_ is an unused number): 
     ___number_,{40EC22BE-2BCC-4FB4-85F7-BC775C59A8C5}__
+* Close and reopen Active Directory Users and Computers to see change
 
 ###To uninstall
 
