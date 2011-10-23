@@ -1,0 +1,19 @@
+;//+-------------------------------------------------------------------------
+;//
+;//  Microsoft Windows
+;//
+;//  Copyright (C) Microsoft Corporation, 1999 - 1999
+;//
+;//  File:       userproppage.def
+;//
+;//--------------------------------------------------------------------------
+
+; userproppage.def : Declares the module parameters.
+
+LIBRARY      "emailaliasesproppage.DLL"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE
