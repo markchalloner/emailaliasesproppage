@@ -115,10 +115,9 @@ void CProppageUserUI::SetUIProxyAddresses()
   if (dwReturned == 1)
   {
     ASSERT(pAttrInfo != NULL);
-
     //
     // write data to the edit control
-
+	GetProxyAddresses()->ResetContent();
 	for (DWORD i = 0; i < pAttrInfo->dwNumValues; i++) {
 		GetProxyAddresses()->AddString(pAttrInfo->pADsValues[i].CaseIgnoreString);
 	}
