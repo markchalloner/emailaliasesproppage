@@ -61,4 +61,7 @@
       <Filter>Source Files</Filter>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\%40emailaliasesproppage\ClassDiagram1.cd" />
+  </ItemGroup>
 </Project>

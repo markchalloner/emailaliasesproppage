@@ -12,25 +12,24 @@ This tab is particularly useful in conjunction with to Google Apps Directory Syn
 Warning!
 --------
 
-__This code was knocked up in a weekend and has only been tested on a 2003 SBS and 2008 R2 server. I cannot be held responsible for any damage you do to your servers/AD by installing it!__
+__This code was knocked up in a weekend and has only been tested on 2003 SBS and 2008 R2 servers. I cannot be held responsible for any damage you do to your servers/AD by installing it!__
 
 Installation
 ------------
 
-###To install on Windows SBS 2003:
+###To install on Windows SBS 2003 (or 32bit OS versions):
 
-* Download the emailaliasesproppage.dll from bin into your system32 folder
-* Register the dll with: __regsrv32 emailaliasesproppage__
+* Download the emailaliasesproppage.dll from bin\x86 into your system32 folder
 * Continue to All section
 
-###To install on Windows 2008 R2: 
+###To install on Windows 2008 R2 (or 64bit OS versions): 
 
-* Download the emailaliasesproppage.dll from bin into your SysWoW64 folder
-* Register the dll with: __%systemroot%\SysWoW64\regsvr32.exe emailaliasesproppage__
+* Download the emailaliasesproppage.dll from bin\x86_64 into your system32 folder
 * Continue to All section
 
 ###All
 
+* Register the dll with: __regsrv32 emailaliasesproppage__
 * Add an admin property page to user-Display CN:
   * Download and run ADSI Edit
   * Connect to your AD
@@ -51,5 +50,4 @@ Installation
 About
 -----
 
-The code is based on the userproppage code in the Microsoft Platform SDK and a lot of Googling. It is my first proper attempt with VC++ so apologies if there are obvious mistakes. Feel free to fork and adapt. I would appreciate pull 
-requests for any fixes made.
+The code is based on the userproppage code in the Microsoft Platform SDK and a lot of Googling. It is my first proper attempt with VC++ so apologies if there are obvious mistakes. Feel free to fork and adapt. I would appreciate pull requests for any fixes made.
